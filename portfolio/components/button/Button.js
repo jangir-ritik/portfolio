@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 30px;
+  right: 30px;
   width: 40px;
   height: 40px;
   border-radius: 25px;
