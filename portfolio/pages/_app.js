@@ -1,6 +1,7 @@
 import { ThemeContext } from '../behaviour/context';
 import { useState, useContext } from 'react';
 import GlobalStyles from '../utils/GlobalStyles';
+import NightModeButton from '../components/button/Button';
 
 function App({ Component, pageProps }) {
   const theme = useContext(ThemeContext);
@@ -13,8 +14,8 @@ function App({ Component, pageProps }) {
 
   return (
     <ThemeContext.Provider value={currentTheme}>
-    <GlobalStyles theme={theme}/>
-      <button onClick={toggleTheme}>Toggle theme</button>
+    <GlobalStyles theme={currentTheme}/>
+      <NightModeButton onClick={toggleTheme}></NightModeButton>
       <Component {...pageProps} />
     </ThemeContext.Provider>
   );

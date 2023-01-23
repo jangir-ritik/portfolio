@@ -1,7 +1,6 @@
 import { useState, useContext } from 'react';
 import { ThemeContext } from '../behaviour/context';
 
-
 const Layout = (props) => {
 
     return (
